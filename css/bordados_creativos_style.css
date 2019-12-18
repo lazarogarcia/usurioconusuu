@@ -1,0 +1,90 @@
+/* plantilla css para costura creativa */
+
+body{
+	margin: 0px;
+	padding: 0px;
+	color: #def7fc;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 1.5em;
+	background-color: #def7fc;
+	background-image: url(imagenes/costura_creativa_fondo.jpg);
+	background-repeat: repeat-x;
+}
+
+#index_wrapper {
+	width: 970px;
+	padding: 0 10px;
+	margin: 0 auto;
+	background: url(imagenes/costura_creativa_fondo.jpg) repeat-y;
+}
+
+#index_cabeza{
+	width: 10px;
+	height: 50px;
+	padding: 10px 30px;
+	background: url(imagenes/bordados_creativos.png) no-repeat;
+}
+
+/* la parte de "bordados creativos" */
+#index_cabeza #titulo_pagweb h1 a{
+	margin: 0px;
+	padding: 0px;
+	font-size: 40px;
+	color: #000;
+	font-weight: normal;
+	text-decoration: none;
+	text-align: center;
+}
+
+/* la parte de *soluciones en creacion textil */
+#index_cabeza #titulo_pagweb a span{
+	display: block;
+	font-size: 14px;
+	color: #2e2c27;
+	font-weight: bold;
+	letter-spacing: 2px;
+	margin-left: 5px;
+	margin-top: 5px;
+	font-family: Helevetica,Arial,sans-serif;
+}
+
+/* barra menu de "Inicio, servicios, etc" 
+   POSICION
+   */
+#index_menu {
+	width: 910px;
+	height: 39px;
+	padding: 10px 30px;
+	background: url(imagenes/index_menu.png) repeat-x;
+}
+
+#index_menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#index_menu ul li{
+	padding: 0px;
+	margin: 0px;
+	display: inline;
+}
+
+#index_menu ul li a {
+	float: left;
+	display: block;
+	width: 102px;
+	height: 24px;
+	padding: 3px 0 0 0;
+	margin: 0 5px 0 0 ;
+	font-size: 13px;
+	text-align: center;
+	text-decoration: none;
+	color: #000	;	
+	font-weight: bold;
+	outline: none;
+	border: none;
+	background: url(imagenes/index_menu.png) top left no-repeat;
+}
+
