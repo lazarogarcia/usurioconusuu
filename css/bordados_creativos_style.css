@@ -25,18 +25,55 @@ body{
 }
 
 /* logo de costura creativa */
-.logo{
-	width: 500px;
-	height: 500px;
+#logo{
+	width: 200px;
+	height: 200px;
 	/* ../ va un subdirectorio hacia atras */
 	background-image: url("../imagenes/bordados_creativos_logo.jpg");
 	background-size: contain;
 	display: inline-block;
 	position: absolute;
 	top: 100px;
-	left: 705px;
+	left: 1010px;
 	float: left;
 }
+
+/* clase para las imagenes de muestra */
+.imagenes_muestra{
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	display: inline-block;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+/* posiciones y demas para las fotos */
+.imagenes_muestra #foto1{
+	background-image: url("../imagenes/inventario/chaleco.jpeg");
+	top: 100px;
+	left: 18px;
+}
+
+.imagenes_muestra #foto2{
+	background-image: url("../imagenes/inventario/toallas.jpeg");
+	top: 100px;
+	left: 250px;
+}
+
+.imagenes_muestra #foto3{
+	background-image: url("../imagenes/inventario/camisas.jpeg");
+	top: 100px;
+	left: 500px;
+}
+
+.imagenes_muestra #foto4{
+	background-image: url("../imagenes/inventario/camisas2.jpeg");
+	top: 100px;
+	left: 750px;
+}
+
+/* fin de posiciones de fotos */
 
 .index_cabeza{
 	width: 700px;
