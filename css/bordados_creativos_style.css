@@ -1,90 +1,92 @@
 /* plantilla css para costura creativa */
 
 body{
+	/*
 	margin: 0px;
 	padding: 0px;
-	color: #def7fc;
+	*/
 	font-family: Helvetica, Arial, sans-serif;
+	/*
 	font-size: 13px;
-	line-height: 1.5em;
+	line-height: 3.5em;
+	*/
 	background-color: #def7fc;
+	/*
 	background-image: url(imagenes/costura_creativa_fondo.jpg);
 	background-repeat: repeat-x;
+	*/
 }
 
-#index_wrapper {
-	width: 970px;
-	padding: 0 10px;
+.index_wrapper {
+	width: 960px;
+	/* padding: 10px 10px; */
 	margin: 0 auto;
-	background: url(imagenes/costura_creativa_fondo.jpg) repeat-y;
+	/* background: url(imagenes/costura_creativa_fondo.jpg) repeat-y; */
 }
 
-#index_cabeza{
-	width: 10px;
-	height: 50px;
-	padding: 10px 30px;
-	background: url(imagenes/bordados_creativos.png) no-repeat;
+/* logo de costura creativa */
+.logo{
+	width: 500px;
+	height: 500px;
+	/* ../ va un subdirectorio hacia atras */
+	background-image: url("../imagenes/bordados_creativos_logo.jpg");
+	background-size: contain;
+	display: inline-block;
+	position: absolute;
+	top: 100px;
+	left: 705px;
+	float: left;
+}
+
+.index_cabeza{
+	width: 700px;
+	height: 300px;
+	padding: 20px;
+	color: black;
 }
 
 /* la parte de "bordados creativos" */
-#index_cabeza #titulo_pagweb h1 a{
-	margin: 0px;
-	padding: 0px;
-	font-size: 40px;
-	color: #000;
-	font-weight: normal;
-	text-decoration: none;
+.index_cabeza #titulo_pagweb #titulo_txt h1 a{
 	text-align: center;
+	width: 100px;
+	padding: 130px 0 0 30px;
+	font-size: 2em;
+	font-weight: bold;
 }
 
-/* la parte de *soluciones en creacion textil */
-#index_cabeza #titulo_pagweb a span{
-	display: block;
-	font-size: 14px;
-	color: #2e2c27;
-	font-weight: bold;
-	letter-spacing: 2px;
-	margin-left: 5px;
-	margin-top: 5px;
-	font-family: Helevetica,Arial,sans-serif;
+/* la parte de *Servicio de bordado industrial desde una pieza. ¡Cotiza tu idea! */
+.index_cabeza #index_descripcion {
+	width: 400px;
+	height: 400px;
+	font-size: 1em;
 }
 
 /* barra menu de "Inicio, servicios, etc" 
    POSICION
    */
-#index_menu {
-	width: 910px;
-	height: 39px;
-	padding: 10px 30px;
-	background: url(imagenes/index_menu.png) repeat-x;
+.index_wrapper #index_menu {
+	
+	list-style: none;
+	width: 960px;
+	height: 20px;
 }
 
 #index_menu ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+	margin-left: 0;
+	padding: 3px 0;
 }
 
 #index_menu ul li{
-	padding: 0px;
-	margin: 0px;
+	margin: 0;
 	display: inline;
 }
 
 #index_menu ul li a {
-	float: left;
-	display: block;
-	width: 102px;
-	height: 24px;
-	padding: 3px 0 0 0;
-	margin: 0 5px 0 0 ;
-	font-size: 13px;
-	text-align: center;
-	text-decoration: none;
-	color: #000	;	
-	font-weight: bold;
-	outline: none;
+	padding: 3px 4.5em;
+	margin-left: 3px;
 	border: none;
-	background: url(imagenes/index_menu.png) top left no-repeat;
+	background: #ffc9ea;
+	text-decoration: none;
+
 }
 
