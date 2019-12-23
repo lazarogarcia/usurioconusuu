@@ -1,76 +1,77 @@
 /* plantilla css para costura creativa */
 
+@import "node_modules/bootstrap/scss/bootstrap";
+
 body{
-	/*
-	margin: 0px;
-	padding: 0px;
-	*/
-	font-family: Helvetica, Arial, sans-serif;
-	/*
-	font-size: 13px;
-	line-height: 3.5em;
-	*/
-	background-color: #def7fc;
-	/*
-	background-image: url(imagenes/costura_creativa_fondo.jpg);
-	background-repeat: repeat-x;
-	*/
+	background-color: black;
 }
 
-.index_wrapper {
-	width: 960px;
-	/* padding: 10px 10px; */
-	margin: 0 auto;
-	/* background: url(imagenes/costura_creativa_fondo.jpg) repeat-y; */
+.jumbotron{
+	background-color: #def7fc;
 }
+
+#container_2{
+	background-color: #f79d16;
+}
+
+body{
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+/* .index_wrapper { 
+	width: 960px; 
+	padding: 10px 10px;
+	margin: 0 auto; 
+	background: url(imagenes/costura_creativa_fondo.jpg) repeat-y;
+ } */
 
 /* logo de costura creativa */
 #logo{
 	width: 200px;
 	height: 200px;
-	/* ../ va un subdirectorio hacia atras */
-	background-image: url("../imagenes/bordados_creativos_logo.jpg");
-	background-size: contain;
-	display: inline-block;
-	position: absolute;
-	top: 100px;
-	left: 1010px;
-	float: left;
 }
 
 /* clase para las imagenes de muestra */
 .imagenes_muestra{
-	width: 200px;
-	height: 200px;
-	position: absolute;
+	width: 100px;
+	height: 100px;
 	display: inline-block;
 	background-size: contain;
 	background-repeat: no-repeat;
 }
 
 /* posiciones y demas para las fotos */
-.imagenes_muestra #foto1{
-	background-image: url("../imagenes/inventario/chaleco.jpeg");
-	top: 100px;
+ #foto1{
+	top: 105px;
+	left: 160px;
+}
+
+#foto2{
+	top: 105px;
+	left: 180px;
+}
+
+#foto3{
+	top: 105px;
+	left: 140px;
+}
+
+#foto4{
+	top: 105px;
+	left: 120px;
+}
+
+.imagenes_muestra #foto5{
+	background-image: url("../imagenes/inventario/camisas3.jpeg");
+	top: 300px;
 	left: 18px;
 }
 
-.imagenes_muestra #foto2{
-	background-image: url("../imagenes/inventario/toallas.jpeg");
-	top: 100px;
+.imagenes_muestra #foto6{
+	background-image: url("../imagenes/inventario/bordado.jpeg");
+	top: 300px;
 	left: 250px;
-}
-
-.imagenes_muestra #foto3{
-	background-image: url("../imagenes/inventario/camisas.jpeg");
-	top: 100px;
-	left: 500px;
-}
-
-.imagenes_muestra #foto4{
-	background-image: url("../imagenes/inventario/camisas2.jpeg");
-	top: 100px;
-	left: 750px;
+	
 }
 
 /* fin de posiciones de fotos */
@@ -89,6 +90,8 @@ body{
 	padding: 130px 0 0 30px;
 	font-size: 2em;
 	font-weight: bold;
+	color: gray;
+	font-weight: bold;
 }
 
 /* la parte de *Servicio de bordado industrial desde una pieza. ¡Cotiza tu idea! */
@@ -99,31 +102,15 @@ body{
 }
 
 /* barra menu de "Inicio, servicios, etc" 
-   POSICION
    */
-.index_wrapper #index_menu {
-	
-	list-style: none;
-	width: 960px;
-	height: 20px;
-}
 
-#index_menu ul {
-	margin-left: 0;
-	padding: 3px 0;
-}
-
-#index_menu ul li{
-	margin: 0;
-	display: inline;
-}
-
-#index_menu ul li a {
-	padding: 3px 4.5em;
-	margin-left: 3px;
-	border: none;
-	background: #ffc9ea;
+.jumbotron #index_menu p {
+	margin: 0 0 10px;
+    display: inline;
 	text-decoration: none;
-
+	
 }
+
+
+
 
