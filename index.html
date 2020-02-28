@@ -23,147 +23,36 @@
   <!-- CDN de bootstrap -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
   <script type="text/javascript" rel="stylesheet" src="js/bootstrap.min.js"></script>
-  
-  
 
   <!-- TODO: crear diseño css, javascript y linker a pagina web con mysql/sql -->
   <link href="css/bordados_creativos_style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
+	<!-- clase para la barra de navegacion (navigation bar) -->
+	<div class="navbar" id="myNavBar">
+    <!-- inicio de lista de menu -->
+    <ul class="menu">
+      <li>
+          <a href="#logo" class="activo">
+            <img src = "../recursos/iconos/logo_transparente_icono.png"></a>
+      </li>
+      <li>
+          <a href="inicio"> Inicio </a>
+      </li>
+      <li>
+          <a href="#servicios"> Servicios y productos </a>
+      </li>
+      <li>
+          <a href="#contacto"> Contacto </a>
+      </li>
+    </ul>
+	</div>
+  <!-- fin de div "navbar" -->
 
-<!-- div define una division en un doc html, para darle un nombre a esa seccion
-de la pag web y acceder mas facil a el -->
-
-<div class="container"> <!-- contenedor para bootstrap -->
-
-	<!-- titulo de la barra de navegacion -->
-	  <nav class="navbar navbar-expand-lg navbar-light bg-ligh" style="background-color: #ff8412;">
-  	  <a class="navbar-brand" href="index.html">
-	    <img src="imagenes/bordados_creativos_logo_sin_nombre.jpg" width="30" height="30" alt=""/>
-		Bordados creativos
-	  </a>
-	<!-- fin de titulo de la barra de navegacion -->  
-	  
-		<!-- boton HOME -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" 
-	  data-target="#navbarNav" 
-	  aria-controls="navbarNav" aria-expanded="false" 
-	  aria-label="Toggle navigation">  
-	    <span class="navbar-toggler-icon"></span>
-	    </button>
-		<!-- fin de boton HOME-->
-		
-		<!-- botones de la barra de inicio -->
-		<div class="collapse navbar-collapse" id="navbarNav">
-		  <ul class="navbar-nav mr-auto">
-		    <li class="nav-item active">
-			  <a class="nav-link" href="index.html"> Inicio <span class="sr-only">(current)</span></a>
-			</li>
-			
-			<li class="nav-item">
-			  <a class="nav-link" href="servicios.html"> Servicios </a>
-			</li>
-		
-			<li class="nav-item">
-			  <a class="nav-link" href="acercadenosotros.html"> Acerca de nosotros </a>
-			</li>
-
-			<li class="nav-item">
-			  <a class="nav-link" href="contacto.html"> Contacto </a>
-			</li>				
-		  </ul>
-		<!-- fin de botones de la barra de inicio -->
-		
-		<!-- barra de busqueda -->
-		<form class="form-inline my-2 my-lg-0">
-		  <input class="form-control mr-sm-2" type="search" placeholder="Buscar en la pagina" aria-label="Search">
-		  <button class="btn btn-success btn-xs" type="submit">Buscar</button>
-		</form>
-		
-	  </nav> <!-- fin de barra de navegacion navbar -->
-
-    <div class="jumbotron">
-	  	  
-	    <div id="titulo_pagweb">
-		  <!-- h1 crea un header chico -->
-	        <h1>
-		      <a id="titulo_txt">Bordados creativos </a>
-		    </h1>
-		  	<!-- alt sirve para ayudar a google a encontrar tu imagen por palabras clave -->
-			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><!-- LOGO -->
-			  <div class="thumbnail">
-				<img id="logo" src="imagenes/bordados_creativos_logo.jpg" alt="bordados, chamarra"/>
-	          </div><!-- fin de div thumbnail -->
-			</div><!-- fin de LOGO clase col-lg-3 col-md-3 col-sm-3 col-xs-3n -->
-	
-	    </div><!-- fin de titulo_pagweb -->
-	  
-	    <div id="index_descripcion">
-		  <p>Servicio de bordado industrial desde una pieza.</p>
-		  <p>¡Cotiza tu idea!</p>
-	    </div>
-	  
-	</div> <!-- fin de div jumbotron -->
-  </div> <!-- fin de class container 1-->
-  
-  
-	<!-- inicio de los thumbnails de ropa -->
-	<div class="container" id="container_2"> <!-- contenedor 2 -->
-	  <div class = "row"><!-- fila 1 -->
-	  
-	    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><!-- imagen 1 -->
-		<div class="thumbnail">
-		  <img class="imagenes_muestra" id="foto1" src="imagenes/inventario/chaleco.jpeg" alt="bordados, chamarra"/>
-	      <div class="caption">	 <h2> bordados para chamarra </h2>
-		    <p> Crea tus bordados personalizados a tu medida. </p>
-			<p><a href="#" class="btn btn-primary" role="button">saber mas</a></p>	
-			</div><!-- fin de clase caption -->
-	        </div><!-- fin de div thumbnail -->
-          </div><!-- fin de FOTO 1 clase col-lg-3 col-md-3 col-sm-3 col-xs-3n -->
-		
-		
-		<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><!-- imagen 2 -->
-		<div class="thumbnail">
-		  <img class="imagenes_muestra" id="foto2" src="imagenes/inventario/toallas.jpeg" alt="bordados, chamarra"/>
-	      <div class="caption">	 <h2> bordados para toallas </h2>
-		    <p> Pide tus bordados en cualquier textil </p>
-			<p><a href="#" class="btn btn-primary" role="button">saber mas</a></p>	
-
-	        </div><!-- fin de div caption -->
-          </div><!-- fin de clase thumbnail -->
-		</div><!-- fin de FOTO 2 clase col-lg-3 col-md-3 col-sm-3 col-xs-3 -->
-		
-		<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><!-- imagen 3 -->
-		<div class="thumbnail">
-		  <img class="imagenes_muestra" id="foto3" src="imagenes/inventario/camisas.jpeg" alt="bordados, chamarra"/>
-	      <div class="caption">	 <h2> bordados para uniformes </h2>
-		    <p> Mano de obra 100% versatil y personalizada </p>
-			<p><a href="#" class="btn btn-primary" role="button">saber mas</a></p>	
-
-	        </div><!-- fin de div caption -->
-          </div><!-- fin de clase thumbnail -->
-		</div><!-- fin de FOTO 3 clase col-lg-3 col-md-3 col-sm-3 col-xs-3 -->	
-
-		<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><!-- imagen 4	 -->
-		<div class="thumbnail">
-		  <img class="imagenes_muestra" id="foto4" src="imagenes/inventario/camisas2.jpeg" alt="bordados, chamarra"/>
-	      <div class="caption">	 <h2> bordados para camisas </h2>
-		    <p> Atencion al detalle </p>
-			<p><a href="#" class="btn btn-primary" role="button">saber mas</a></p>	
-
-	        </div><!-- fin de div caption -->
-          </div><!-- fin de clase thumbnail -->
-		</div><!-- fin de FOTO 4 clase col-lg-3 col-md-3 col-sm-3 col-xs-3 -->				
-		
-	  </div><!-- fin de clase row -->
-	</div><!-- fin de clase container 2 -->
-
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+	  <div class="cuerpo" id="cuerpo_master">
+|
+    </div>
 
 </body>
 

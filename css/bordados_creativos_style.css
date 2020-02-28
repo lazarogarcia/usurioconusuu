@@ -3,114 +3,60 @@
 @import "node_modules/bootstrap/scss/bootstrap";
 
 body{
-	background-color: black;
+	background-image: url("../recursos/vectores/fondo2.png");
+	backgroud-size: cover;
 }
 
-.jumbotron{
-	background-color: #def7fc;
-}
 
-#container_2{
-	background-color: #f79d16;
-}
+/* 
+clase para la barra de navegacion (topnavbar) 
+fuente: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+*/
 
-body{
-	font-family: Helvetica, Arial, sans-serif;
-}
-
-/* .index_wrapper { 
-	width: 960px; 
-	padding: 10px 10px;
-	margin: 0 auto; 
-	background: url(imagenes/costura_creativa_fondo.jpg) repeat-y;
- } */
-
-/* logo de costura creativa */
-#logo{
-	width: 200px;
-	height: 200px;
-}
-
-/* clase para las imagenes de muestra */
-.imagenes_muestra{
-	width: 100px;
-	height: 100px;
-	display: inline-block;
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-
-/* posiciones y demas para las fotos */
- #foto1{
-	top: 105px;
-	left: 160px;
-}
-
-#foto2{
-	top: 105px;
-	left: 180px;
-}
-
-#foto3{
-	top: 105px;
-	left: 140px;
-}
-
-#foto4{
-	top: 105px;
-	left: 120px;
-}
-
-.imagenes_muestra #foto5{
-	background-image: url("../imagenes/inventario/camisas3.jpeg");
-	top: 300px;
-	left: 18px;
-}
-
-.imagenes_muestra #foto6{
-	background-image: url("../imagenes/inventario/bordado.jpeg");
-	top: 300px;
-	left: 250px;
+/* */
+.navbar{
+	background: rgb(75,176,255);
+	background: linear-gradient(90deg, rgba(75,176,255,1) 
+		7%, rgba(113,254,237,1) 31%, rgba(255,0,162,1) 
+		61%, rgba(255,92,0,1) 87%);
 	
 }
 
-/* fin de posiciones de fotos */
-
-.index_cabeza{
-	width: 700px;
-	height: 300px;
-	padding: 20px;
-	color: black;
+/* introduce los links dentro de la barra de navegacion */
+.navbar ul{
+	float: left;
+	display: block;
+	color: white;
+	text-aligh: center;
+	font-size: 17px;
+	/* elimina el punto negro */
+	list-style-type: none;
+	/* controla el margen de espacio entre botones */
+	margin: 0 2vx;
+		/* */
+	font-size: 3vh;
+	display: flex;
 }
 
-/* la parte de "bordados creativos" */
-.index_cabeza #titulo_pagweb #titulo_txt h1 a{
-	text-align: center;
-	width: 100px;
-	padding: 130px 0 0 30px;
-	font-size: 2em;
-	font-weight: bold;
-	color: gray;
-	font-weight: bold;
-}
-
-/* la parte de *Servicio de bordado industrial desde una pieza. ¡Cotiza tu idea! */
-.index_cabeza #index_descripcion {
-	width: 400px;
-	height: 400px;
-	font-size: 1em;
-}
-
-/* barra menu de "Inicio, servicios, etc" 
-   */
-
-.jumbotron #index_menu p {
-	margin: 0 0 10px;
-    display: inline;
-	text-decoration: none;
+.navbar li{
 	
+	/*this option by default dispose the elements in a row (flex-direction: row)*/
+	list-style-type: none;
+	/* controla el margen de espacio entre botones */
+	margin: 0 2vx;
+	/* */
+	font-size: 3vh;
 }
 
+/*controla la distancia y margen de las opciones / botones */
+.navbar ul li{
+
+}
+
+/* para cambiar el color de los links cuando estan seleccionador */
+.navbar a.activo{
+
+}
 
 
 
