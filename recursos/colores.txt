@@ -1,0 +1,4 @@
+#71FEED azul neon
+#4BB0FF azul oscuro
+#FF00A2 morado
+##FF5C00 naranja

@@ -7,35 +7,54 @@ body{
 	backgroud-size: cover;
 }
 
+.contenedor{
+	text-align: center;
+	padding: .8em 1.2em;
+}
 
 /* 
 clase para la barra de navegacion (topnavbar) 
 fuente: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
 */
 
-/* */
-.navbar{
+.navbar .menu{
 	background: rgb(75,176,255);
 	background: linear-gradient(90deg, rgba(75,176,255,1) 
 		7%, rgba(113,254,237,1) 31%, rgba(255,0,162,1) 
 		61%, rgba(255,92,0,1) 87%);
-	
+
+	text-align: center;
+	padding: .8em 1.2em;	
+}
+
+/* personaliza los links dentro de la  barra de navegacion */
+.navbar a{
+	float: left;
+	display: block;
+	color: #b61063;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+/* guarda el link que debe de abrir y cerrar la navbar en pantallas chicas */
+.navbar .icon{
+	display: none;
 }
 
 /* introduce los links dentro de la barra de navegacion */
 .navbar ul{
 	float: left;
-	display: block;
 	color: white;
 	text-aligh: center;
 	font-size: 17px;
 	/* elimina el punto negro */
 	list-style-type: none;
 	/* controla el margen de espacio entre botones */
-	margin: 0 2vx;
+
 		/* */
 	font-size: 3vh;
-	display: flex;
 }
 
 .navbar li{
@@ -43,20 +62,129 @@ fuente: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
 	/*this option by default dispose the elements in a row (flex-direction: row)*/
 	list-style-type: none;
 	/* controla el margen de espacio entre botones */
-	margin: 0 2vx;
 	/* */
 	font-size: 3vh;
+	display: inline;
+	padding-right: 30px;
+	float: left;
+
 }
 
 /*controla la distancia y margen de las opciones / botones */
-.navbar ul li{
-
+.navbar ul li a{ 
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	background: inherit; 
 }
 
-/* para cambiar el color de los links cuando estan seleccionador */
-.navbar a.activo{
-
+/* contenedor de la lista dropdown: ajusta la posicion del contenido */
+.dropdown{
+	
+	float: left;
+	overflow: hidden;
 }
 
+/* hace que el "boton" del dropdown encaje dentro del contenedor principal */
+.dropdown .dropdown_boton{
+	font-size: 17px;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+}
 
+/* estiliza el boton del dropdown para que tenga su informacion oculta
+entre otras cosas */
+.dropdown_contenido{
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;	
+}
 
+/* se hace cargo de los links dentro del menu dropdown */
+.dropdown_contenido a{
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;	
+}
+
+/* añade un fondo oscuro a los links del contenedor navbar y al boton
+dropdown cuando se coloca el cursor encima de el (hover)*/
+.navbar a:hover, .dropdown:hover .dropdown_boton{
+	background-color: #555;
+	color: white;
+}
+
+/* añade un fondo gris a los links del menu dropdown cuando se coloca
+el cursor encima de el */
+
+.dropdown_contenido a:hover{
+	background-color: #ddd;
+	color: black;
+}
+
+/* muestra el contenido del menu dropdown cuando el usuario coloca el
+cursor encima del boton */
+
+.dropdown:hover .dropdown_contenido{
+	display: block;
+}
+
+/* cuando la pantalla es menor a los 600 pixeles de ancho, se 
+ocultan todos los links excepto el primero (inicio) */
+
+@media screen and (max-width: 600px){
+	.navbar a:not(:first-child), .dropdown .dropdown_boton{
+		display: none;
+	}
+
+	.navbar a.icon{
+		float: right;
+		display: block;
+	}
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when 
+the user clicks on the icon. This class makes the topnav look good 
+on small screens (display the links vertically instead of horizontally)
+ */
+@media screen and (max-width: 600px) {
+	.navbar.responsive {
+		position: relative;
+	}
+
+	.navbar.responsive a.icon {
+	  position: absolute;
+	  right: 0;
+	  top: 0;
+	}
+	.navbar.responsive a {
+	  float: none;
+	  display: block;
+	  text-align: left;
+	}
+	.navbar.responsive .dropdown {
+		float: none;
+	}
+	.navbar.responsive .dropdown_contenido {
+		position: relative;
+	}
+	.navbar.responsive .dropdown .dropdown_boton {
+	  display: block;
+	  width: 100%;
+	  text-align: left;
+	}
+}

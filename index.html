@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-  <title> bordados creativos </title>
+  <title> bordados creativos </title >
 
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
   <!-- favicon: logo de la pag web visible desde el tab -->
@@ -11,7 +11,6 @@
   <meta name="keywords" content="costura, creativa, diseño, textil, tania, paola, vazquez,
    bordados, creativos"/>
    
-   <meta charset "utf-8" content="text/html"/>
   <!-- este tag meta se asegura de usar la version mas nueva del motor 
   para internet explorer -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -20,23 +19,44 @@
   <!-- description provee una descripcion para tu pag web -->
   <meta name="description" content="diseño textil y soluciones de bordado"/>
   
-  <!-- CDN de bootstrap -->
+  <!-- CDN de bootstrap 
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
   <script type="text/javascript" rel="stylesheet" src="js/bootstrap.min.js"></script>
+-->
+
+  <!-- archivo de scripts hecho por nosotros -->
+  <script type="text/javascript" rel="stylesheet" src="../js/bordados_creativos_scripts.js"></script>
 
   <!-- TODO: crear diseño css, javascript y linker a pagina web con mysql/sql -->
   <link href="css/bordados_creativos_style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-	<!-- clase para la barra de navegacion (navigation bar) -->
+  <!-- clase para la barra de navegacion (navigation bar) -->
+  
+  <div class="contenedor">
 	<div class="navbar" id="myNavBar">
+
     <!-- inicio de lista de menu -->
     <ul class="menu">
-      <li>
-          <a href="#logo" class="activo">
-            <img src = "../recursos/iconos/logo_transparente_icono.png"></a>
-      </li>
+      
+      <!-- clase de la lista de info del boton-->
+      <div class="dropdown">
+        <button class="dropdown_boton">
+          <li><!-- boton de menu-->
+            <a href="#logo" class="activo">
+              <img src = "../recursos/iconos/logo_transparente_icono.png"></a>
+          </li>
+        </button>
+        <!-- lista de contenido del submenu del boton -->
+        <div class ="dropdown_contenido">
+          <a href="#"> Iniciar sesion </a>
+          <a href="#"> Crear usuario</a>
+          <a href="#"> Buscar</a>
+        </div>
+      </div>
+      <!-- fin de boton inicio -->
+
       <li>
           <a href="inicio"> Inicio </a>
       </li>
@@ -47,13 +67,13 @@
           <a href="#contacto"> Contacto </a>
       </li>
     </ul>
-	</div>
-  <!-- fin de div "navbar" -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+	</div> <!-- fin de div "navbar" -->
 
 	  <div class="cuerpo" id="cuerpo_master">
 |
-    </div>
-
+    </div><!-- fin div cuerpo -->
+  </div><!--fin div contenedor -->
 </body>
 
 </html>
