@@ -1,0 +1,51 @@
+body{
+	background-image: url("../recursos/vectores/fondo2.png");
+	backgroud-size: cover;
+}
+
+.thumbnailS{
+    height: 50px;
+    max-height:225px;
+    width: 50px;
+}
+
+.carousel-inner .carousel-item img {
+    height: 225px;
+    max-height:225px;
+    width: auto;
+}
+
+/* clase para las imagenes de muestra */
+.imagenes_muestra{
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+/* contenedor de las imagenes de muestra */
+.container_2{
+    background-color: #ebebf3;
+}
+
+/* posiciones y demas para las fotos */
+ #foto1{
+	top: 105px;
+	left: 160px;
+}
+
+#foto2{
+	top: 105px;
+	left: 180px;
+}
+
+#foto3{
+	top: 105px;
+	left: 140px;
+}
+
+#foto4{
+	top: 105px;
+	left: 120px;
+}
