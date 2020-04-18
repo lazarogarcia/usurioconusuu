@@ -3,49 +3,32 @@ body{
 	backgroud-size: cover;
 }
 
-.thumbnailS{
-    height: 50px;
-    max-height:225px;
-    width: 50px;
-}
-
 .carousel-inner .carousel-item img {
-    height: 225px;
+    height: auto;
     max-height:225px;
     width: auto;
 }
 
 /* clase para las imagenes de muestra */
-.imagenes_muestra{
-	width: 100px;
-	height: 100px;
+.thumbnail.imagenes_muestra > img{
+	width: auto;
+    max-height:225px;
 	display: inline-block;
-	background-size: contain;
 	background-repeat: no-repeat;
+	float: left;
 }
 
 /* contenedor de las imagenes de muestra */
 .container_2{
-    background-color: #ebebf3;
+    background-color: #EFE9F4;
 }
 
 /* posiciones y demas para las fotos */
- #foto1{
-	top: 105px;
-	left: 160px;
+.container_imagenes_muestra .imagenes_muestra{
+	float: left;
 }
 
-#foto2{
-	top: 105px;
-	left: 180px;
+.container_imagenes_muestra .caption{
+	padding: 4px;
 }
 
-#foto3{
-	top: 105px;
-	left: 140px;
-}
-
-#foto4{
-	top: 105px;
-	left: 120px;
-}
