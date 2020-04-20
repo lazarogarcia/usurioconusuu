@@ -9,28 +9,34 @@ body{
     width: auto;
 }
 
-
+/* clase para las imagenes de muestra */
+.thumbnail.imagenes_muestra > img{
+	width: auto;
+    max-height:225px;
+	display: inline-block;
+	background-repeat: no-repeat;
+	float: left;
+}
 
 /* contenedor de las imagenes de muestra */
 .container_2{
     background-color: #EFE9F4;
 }
 
-/* contenedor de la seccion de contacto */
-.container_3 {
-	background-color: #EFE9F4;
+.container_imagenes_muestra{
+	width:auto; 
 }
 
-#foto_div{
-    height: 50%;
-    width: 50%;
+/* posiciones y demas para las fotos */
+.container_imagenes_muestra .imagenes_muestra{
+	float: left;
 }
 
-img {
-	max-width: 25%; 
+.img {
+	max-width: 25px; 
 	height:auto; 
 	text-align:center; 
-	float: left;
+	padding:20px; 
 }
 
 /* For width 400px and larger: */
@@ -42,25 +48,14 @@ img {
 		padding:20px; 
 	}
 	.img {
-		max-width: 25%; 
+		max-width: 25px; 
 		height:auto; 
 		text-align:center; 
-		float: left;
+		padding:20px; 
 	}
   }
 
 .container_imagenes_muestra .caption{
 	padding: 4px;
 }
-
-/* Set the size of the div element that contains the map 
-	google maps
-	*/
-#map {
-    height: 400px;  /* The height is 400 pixels */
-    width: 100%;  /* The width is the width of the web page */
-}
-
-
-
 
