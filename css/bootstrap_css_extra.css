@@ -9,11 +9,14 @@ body{
     width: auto;
 }
 
-
+.container{
+	
+}
 
 /* contenedor de las imagenes de muestra */
 .container_2{
-    background-color: #EFE9F4;
+	background-color: #EFE9F4;
+
 }
 
 /* contenedor de la seccion de contacto */
@@ -23,7 +26,8 @@ body{
 
 #foto_div{
     height: 50%;
-    width: 50%;
+	width: 50%;
+	float: left;
 }
 
 img {
